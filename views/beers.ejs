@@ -1,0 +1,10 @@
+<ol>
+  <% beersFromApi.forEach(beer => { %>
+  <li><%= beer.name %></li>
+  <p><%= beer.description %></p>
+  <p><%= beer.tagline %></p>
+  <img src="<%= beer.image_url %>" alt="" />
+
+  <!-- use <%= %> to output HTML -->
+  <% }) %>
+</ol>

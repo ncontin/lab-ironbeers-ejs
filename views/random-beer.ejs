@@ -1,0 +1,10 @@
+<% responseFromAPI.forEach(beer => { %>
+<p>NAME: <%= beer.name %></p>
+<p>DESCRIPTION: <%= beer.description %></p>
+<p>TAGLINE: <%= beer.tagline %></p>
+<p>FOOD PAIRING: <%= beer.food_pairing %></p>
+<p>BREWER TIPS: <%= beer.brewers_tips %></p>
+<img src="<%= beer.image_url %>" alt="" />
+
+<!-- use <%= %> to output HTML -->
+<% }) %>
